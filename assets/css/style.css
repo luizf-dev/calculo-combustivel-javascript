@@ -25,7 +25,7 @@ body{
 }
 
 i{   
-    padding: 20px;
+    padding: 30px;
     color: midnightblue;
 }
 
@@ -34,7 +34,6 @@ i{
     width: 90%;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 1px 1px 10px #000;
 }
 
 .title, .header-title{
@@ -43,7 +42,7 @@ i{
     text-align: center;
     font-weight: 900;
     color: midnightblue;
-    text-shadow: 1px 1px 3px #fff;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .info-title, .info-text{
@@ -125,7 +124,7 @@ input::placeholder{
 @media (max-width: 575.98px) {
 
     body{
-        padding: 15px;
+        padding: 3px;
     }
 
     .container{
@@ -133,21 +132,60 @@ input::placeholder{
         width: 100%;
         margin: 0 auto;
     }
+    
+    .logo{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 auto;
+    }
 
-    .title, .header-title{
-        font-size: 1.8em;
+    i{   
+        padding: 20px;
+        color: midnightblue;
+        font-size: 1em;
+    }
+    
+    .header-title, .title{
+        font-size: 0.9em;
     }
 
     .info{
-        width: 95%;
+        width: 98%;
+    }
+    
+    .info-title, .info-text{
+    font-size: 0.6em;
+    text-align: center;
+    font-weight: 900;
+    color: #000;
     }
 
     form{
-        padding: 15px;
+        padding: 5px;
         margin-top: 30px;
     }
 
     label{
-        font-size: 1.5em;
+    font-size: 0.8em;
+    font-weight: 900;
+    }
+
+    input{
+        width: 100%;
+        height: 50px;
+        margin: 5px auto;
+        color: #000;
+        font-size: 1.3em;
+        outline: none;
+        padding: 2px;
+    }    
+    .resultado{
+        font-size: 1em;
+        font-weight: 900;
+        background-color: darksalmon;
+        width: 100%;
+        margin: 50px auto;
     }
 }
