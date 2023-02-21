@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cálculo Combustível</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/gas-pump-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+  </head>
+  <body>
+    <div class="container">
+         <div class="logo">
+                <i class="fas fa-gas-pump fa-4x"></i>
+            </div>
+            <div class="header">
+                <h1 class="header-title">Calculadora Álcool X Gasolina</h1>
+            </div>            
+            <div class="info">
+                <h3 class="info-title">Como é feito o cálculo?</h3><hr>
+                <p class="info-text">
+                    A principal diferença entre os dois combustíveis
+                    está na proporção entre o preço e o desempenho de cada um.
+                    O etanol vai valer a pena quando custar até 70% do valor da gasolina.
+                    Aqui vamos comparar o preço do litro
+                    do álcool e da gasolina e mostrar qual é o combustível mais vantajoso.                    
+                </p>
+            </div>
+           
+            <h1 class="title">Qual a melhor opção?</h1>
+            <p class="resultado" id="resultado"></p>
+            <form method="post">            
+                <label for="alcool">Álcool (Preço por litro)</label>
+                <input name="alcool" id="alcool" class="money" type="text" placeholder="R$ 0,00">
+                <label for="gasolina">Gasolina (Preço por litro)</label>
+                <input name="gasolina" id="gasolina" class="money" type="text" placeholder="R$ 0,00">
+                <button type="button" onclick="calculo(event)" class="btn">Calcular</button>   
+                <button type="reset" onclick="location.reload()"  class="btn">Limpar</button>      
+            </form>
+        </div>
+  </body>
+  <!--? Javascript-->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!--? Biblioteca Jquery Mask Plugin-->
+  <script src="assets/Mask-Plugin/dist/jquery.mask.min.js"></script>
+</html>

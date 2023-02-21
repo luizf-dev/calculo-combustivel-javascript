@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    background-color: rgba(79, 175,152 ,1);
+    height: auto;
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+i{   
+    padding: 20px;
+    color: midnightblue;
+}
+
+.info{
+    background-color: rgb(174, 214, 174);
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.title, .header-title{
+    font-size: 2em;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 900;
+    color: midnightblue;
+    text-shadow: 1px 1px 3px #fff;
+}
+
+.info-title, .info-text{
+    font-size: 1.3;
+    text-align: center;
+    font-weight: 900;
+    color: #000;
+}
+
+.info-text{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+hr{
+    width: 70%;
+    margin: 5px auto;
+    border: 1px solid #000;
+}
+
+form{    
+    padding: 30px;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    color: #000;
+    font-size: 1.3em;
+    outline: none;
+    padding: 2px;
+}
+
+input:focus{
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+input::placeholder{
+    color: #000;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color: midnightblue;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.resultado{
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 900;
+  text-align: center;
+  background-color: darksalmon;
+  width: 89%;
+  margin: 50px auto;
+  box-shadow: 1px 1px 10px #000;
+}
+
+
+/**  ================ MEDIA QUERIES========================*/
+/* ? Dispositivos extra pequenos (telefones modo retrato, menos de 576px)*/
+@media (max-width: 575.98px) {
+
+    body{
+        padding: 15px;
+    }
+
+    .container{
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .title, .header-title{
+        font-size: 1.8em;
+    }
+
+    .info{
+        width: 95%;
+    }
+
+    form{
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    label{
+        font-size: 1.5em;
+    }
+}
