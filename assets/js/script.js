@@ -35,7 +35,7 @@ function calculo(event) {
                  resultado > 70 ? mensagemGasolina :
                  mensagemAmbas;
 
-    displayResultado.innerHTML = resultado + '% - ' + mensagem;
+    displayResultado.innerHTML = resultado.toLocaleString('pt-BR',{maximumFractionDigits:1}) + '% - ' + mensagem;
 
     //?limpa os inputs após o calculo e impressão na tela
     alcool.value = "";
