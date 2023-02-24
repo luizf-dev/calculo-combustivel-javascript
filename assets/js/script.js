@@ -2,14 +2,16 @@
 //? função que calcula os valores
 function calculo(event) {
 
-   //? evita que a página seja atualizada automaticamente
+   //? Evita que a página seja atualizada automaticamente,
+   //?  previne o comportamento padrão de um evento, ou seja, é usado
+   //?  para impedir que uma ação padrão do navegador aconteça quando um evento é disparado.
    event.preventDefault();
+
 
   //? Obtem os valores dos inputs
   const alcool = document.getElementById("alcool").value;
   const gasolina = document.getElementById("gasolina").value;
   const displayResultado = document.getElementById("resultado");
-  const displayErro = document.getElementById('error');
 
  //? variáveis para mensagem ao usuário
   let mensagemAlcool = "A melhor opção nesse caso é Álcool!";
@@ -27,17 +29,17 @@ function calculo(event) {
   const valorgasolina  = parseFloat(gasolina);
 
   //? Fazer a multiplicação e mostrar o resultado na tela
-  const resultado = (valoralcool * 100) / valorgasolina;
-  
+  const resultado = (valoralcool * 100) / valorgasolina;  
 
   //? começa a verificar os resultados possíveis para entregar a mensagem ao usuário
   let mensagem = resultado < 70 ? mensagemAlcool :
                  resultado > 70 ? mensagemGasolina :
                  mensagemAmbas;
 
-    displayResultado.innerHTML = resultado.toLocaleString('pt-BR',{maximumFractionDigits:1}) + '% - ' + mensagem;
+  // ? Gera o HTML dinâmico e imprime o resultado na tela.
+  displayResultado.innerHTML = resultado.toLocaleString('pt-BR',{maximumFractionDigits:1}) + '% - ' + mensagem;
 
-    //?limpa os inputs após o calculo e impressão na tela
-    alcool.value = "";
-    gasolina.value = "";
+  //?limpa os inputs após o calculo e impressão na tela
+  alcool.value = "";
+  gasolina.value = "";
 }
